@@ -1,0 +1,13 @@
+@startuml
+(*)  --> If "Logging \nmethod" then
+    --> [Time cardio\nor strength] "Input session name"
+    --> "Start timer"
+    --> "Stop timer"
+    --> "Record heart rate"
+    --> "Session recorded"
+else
+    --> [Pre-set duration] "Input session name,\ntype, duration"
+    --> "Session recorded"
+Endif
+-->(*)
+@enduml

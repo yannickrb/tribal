@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="pref_restDay"
+        android:title="@string/pref_restDay"
+        android:dialogTitle="@string/pref_restDay"
+        android:entries="@array/pref_restDay_entries"
+        android:entryValues="@array/pref_restDay_values"
+        android:defaultValue="@string/pref_restDay_default" />
+
+</PreferenceScreen>

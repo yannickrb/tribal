@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TriBal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_eat">Eat</string>
+    <string name="button_exercise">Exercise</string>
+    <string name="button_work_sleep">Work/Sleep</string>
+    <string name="text_bal_index_is">Your Balance Index is:</string>
+    <string name="text_bal_index"></string>
+    <string name="title_activity_log_meal">Log Meal</string>
+    <string name="button_advice">Advice</string>
+    <string name="text_food_name">Food name:</string>
+    <string name="text_nutritional_info">Nutritional information</string>
+    <string name="text_carbs">Carbs (g):</string>
+    <string name="text_fat">Fat (g):</string>
+    <string name="text_protein">Protein (g):</string>
+    <string name="button_add_food">Add to meal</string>
+    <string name="button_finish_meal">Finish meal</string>
+    <string name="button_previous_meals">Add previous meal</string>
+    <string name="text_portion_amount">Portion:</string>
+    <string name="text_portion_unit"></string>
+    <string name="button_help">Help</string>
+    <string name="button_settings">Settings</string>
+    <string name="button_reports">Reports</string>
+    <string name="button_diet_reports">Diet reports</string>
+    <string name="button_exercise_reports">Exercise reports</string>
+    <string name="button_stress_reports">Stress reports</string>
+    <string name="button_diet_index">Diet index</string>
+    <string name="button_exercise_index">Exercise index</string>
+    <string name="button_stress_index">Stress index</string>
+    <string name="button_daily_totals">Daily totals</string>
+    <string name="button_list_of_meals">List of meals</string>
+    <string name="button_list_of_sessions">List of sessions</string>
+    <string name="text_diet_index_is">Your overall Diet index is:</string>
+    <string name="text_diet_index"></string>
+    <string name="text_exercise_index_is">Your overall Exercise index is:</string>
+    <string name="text_exercise_index"></string>
+    <string name="text_stress_index_is">Your overall Stress index is:</string>
+    <string name="text_stress_index"></string>
+    <string name="title_activity_log_exercise">Log Exercise</string>
+    <string name="title_activity_log_stress">Log Work/Sleep</string>
+    <string name="title_activity_advice">Advice</string>
+    <string name="title_activity_reports">Reports</string>
+    <string name="title_activity_diet_reports">Diet Reports</string>
+    <string name="title_activity_exercise_reports">Exercise Reports</string>
+    <string name="title_activity_stress_reports">Stress Reports</string>
+    <string name="button_start_cardio">Time cardio session</string>
+    <string name="button_start_strength">Time strength session</string>
+    <string name="button_start_work">Time work session</string>
+    <string name="button_start_sleep">Time sleep session</string>
+    <string name="button_preset">Pre-set duration</string>
+    <string name="title_activity_timer">Timer</string>
+    <string name="text_start_timer">START</string>
+    <string name="text_stop_timer">STOP</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_heart_rate_monitor">Heart Rate Monitor</string>
+    <string name="default_text">--</string>
+    <string name="preference_file_key">preferences</string>
+    <string name="title_activity_diet_index">DietIndexActivity</string>
+    <string name="text_carbohydrate_index">Your Carbohydrate index is: </string>
+    <string name="text_fat_index">Your Fat index is: </string>
+    <string name="text_protein_index">Your Protein index is: </string>
+    <string name="text_cardio_index">Your Cardio index is: </string>
+    <string name="text_strength_index">Your Strength index is: </string>
+    <string name="text_work_index">Your Work index is: </string>
+    <string name="text_sleep_index">Your Sleep index is: </string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+    <string name="pref_restDay">Rest day</string>
+    <string name="pref_restDay_summ">Rest day summ</string>
+    <string name="pref_restDay_default">7</string>
+
+    <string-array name="pref_restDay_entries">
+        <item >Monday</item>
+        <item >Tuesday</item>
+        <item >Wednesday</item>
+        <item >Thursday</item>
+        <item >Friday</item>
+        <item >Saturday</item>
+        <item >Sunday</item>
+    </string-array>
+
+    <string-array name="pref_restDay_values">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,18 @@
+@startuml
+(*)  --> If "Add previous \nmeal?" then
+    --> [Yes] "Choose from list"
+    --> "Meal recorded"
+else
+    --> [No] "Input food name"
+    --> "Food database auto-search"
+    --> "Input portion size"
+    --> "Add food"
+    --> If "Add another food?" then
+            --> [Yes] "Input food name"
+        else
+            --> [No] "Finish meal"
+            --> "Meal recorded"
+        Endif
+Endif
+-->(*)
+@enduml

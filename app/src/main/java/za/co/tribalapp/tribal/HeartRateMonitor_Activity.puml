@@ -1,0 +1,22 @@
+@startuml
+skinparam activityFontSize 32
+skinparam activityDiamondFontSize 32
+skinparam activityArrowFontSize 32
+(*) If "t >= 10?" then
+            --> [Y] "Store heart rate"
+            --> (*)
+    else
+ --> [N] "Capture frame, extract red pixels"
+--> "Insert vals into array"
+--> "Smoothing function = avg red pixel"
+If "avg > prev avg?" then
+--> [Y] "Vein pulse"
+--> (*)
+    else
+
+
+else
+--> [N] "Capture frame, extract red pixels"
+Endif
+
+@enduml

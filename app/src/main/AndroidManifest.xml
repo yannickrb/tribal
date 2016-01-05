@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="za.co.tribalapp.tribal" >
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogMealActivity"
+            android:label="@string/title_activity_log_meal"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LogExerciseActivity"
+            android:label="@string/title_activity_log_exercise"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LogStressActivity"
+            android:label="@string/title_activity_log_stress"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ReportsActivity"
+            android:label="@string/title_activity_reports"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AdviceActivity"
+            android:label="@string/title_activity_advice"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DietReportsActivity"
+            android:label="@string/title_activity_diet_reports"
+            android:parentActivityName=".ReportsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.ReportsActivity" />
+        </activity>
+        <activity
+            android:name=".ExerciseReportsActivity"
+            android:label="@string/title_activity_exercise_reports"
+            android:parentActivityName=".ReportsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.ReportsActivity" />
+        </activity>
+        <activity
+            android:name=".StressReportsActivity"
+            android:label="@string/title_activity_stress_reports"
+            android:parentActivityName=".ReportsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.ReportsActivity" />
+        </activity>
+        <activity
+            android:name=".TimerActivity"
+            android:label="@string/title_activity_timer"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HeartRateMonitorActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_heart_rate_monitor"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.tribalapp.tribal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+    </application>
+
+</manifest>

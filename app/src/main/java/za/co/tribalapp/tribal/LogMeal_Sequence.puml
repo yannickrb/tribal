@@ -1,0 +1,9 @@
+@startuml
+LogMealActivity -> FoodDbHandler: onCreate(): getAllFoodNames()
+FoodDbHandler --> LogMealActivity: List<String> foodList
+
+LogMealActivity -> FoodDbHandler : onItemClickListener()
+FoodDbHandler --> LogMealActivity: Integer nutrition values
+LogMealActivity -> LogMealActivity: addToMeal(): increment values
+LogMealActivity -> UserDbHandler: saveMeal(): SQL insert
+@enduml

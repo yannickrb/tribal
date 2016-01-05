@@ -1,0 +1,13 @@
+Functionality:
+-Help screen typos
+-Graphs (calculating date & time)
+-Balance index (13%?)
+-Settings: rest day
+-Exception handling
+
+Design:
+-Log Exercise/Stress: countdown timer for heart rate measurement - "Take heart rate in x minutes"
+-Heart beat icon
+-Settings: notifications
+-AutoComplete form should show more of food title (hover tip)
+-Individual help screens

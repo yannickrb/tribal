@@ -1,0 +1,25 @@
+@startuml
+(*) --> Get metric value
+    --> If "value < targetMin?" then
+        --> [y] If "diff > 0.5*targetMin?"
+            --> [y]"...much more"
+            -->(*)
+        else
+            --> [n]"...a bit more"
+            -->(*)
+        endif
+    else
+        --> [n] If "actual > targetMax?" then
+            --> [y] If "diff > 0.5*targetMin?"
+                    --> [y]"...much less"
+                    -->(*)
+                else
+                    --> [n]"...a bit less"
+                    -->(*)
+                endif
+            else
+                --> [n] "...within range"
+            endif
+Endif
+-->(*)
+@enduml

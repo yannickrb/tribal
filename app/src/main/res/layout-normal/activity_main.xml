@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_eat"
+        android:id="@+id/button_eat"
+        android:onClick="logMeal"
+        android:background="@drawable/ic_eat"
+        android:contentDescription="@string/button_eat"
+        android:layout_above="@+id/button_work_sleep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_exercise"
+        android:id="@+id/button_exercise"
+        android:layout_toStartOf="@+id/button_eat"
+        android:onClick="logExercise"
+        android:background="@drawable/ic_exercise"
+        android:contentDescription="@string/button_exercise"
+        android:layout_marginBottom="46dp"
+        android:layout_above="@+id/button_reports"
+        android:layout_toLeftOf="@+id/button_eat"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_work_sleep"
+        android:id="@+id/button_work_sleep"
+        android:onClick="logStress"
+        android:layout_toEndOf="@+id/button_reports"
+        android:adjustViewBounds="false"
+        android:background="@drawable/ic_work_sleep"
+        android:layout_alignTop="@+id/button_exercise"
+        android:layout_toRightOf="@+id/button_reports"
+        android:contentDescription="@string/button_work_sleep"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_bal_index_is"
+        android:id="@+id/textView_bal_index_is"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_bal_index"
+        android:id="@+id/textView_bal_index"
+        android:layout_below="@+id/textView_bal_index_is"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_advice"
+        android:id="@+id/button_advice"
+        android:layout_below="@+id/textView_bal_index"
+        android:onClick="advice"
+        android:layout_alignRight="@+id/button_eat"
+        android:layout_alignEnd="@+id/button_eat"
+        android:layout_alignLeft="@+id/button_eat"
+        android:layout_alignStart="@+id/button_eat"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_reports"
+        android:id="@+id/button_reports"
+        android:onClick="reports"
+        android:layout_toEndOf="@+id/button_exercise"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_exercise"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_settings"
+        android:id="@+id/button_settings"
+        android:onClick="settings"
+        android:background="@android:drawable/ic_menu_preferences"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button_reports"
+        android:layout_toLeftOf="@+id/textView_bal_index_is"
+        android:layout_toStartOf="@+id/textView_bal_index_is"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_help"
+        android:background="@android:drawable/ic_menu_help"
+        android:onClick="help"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_reports"
+        android:layout_toRightOf="@+id/textView_bal_index_is"
+        android:layout_toEndOf="@+id/textView_bal_index_is"/>
+
+
+</RelativeLayout>

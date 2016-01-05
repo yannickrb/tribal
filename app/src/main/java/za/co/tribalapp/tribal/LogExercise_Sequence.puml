@@ -1,0 +1,8 @@
+@startuml
+LogExerciseActivity -> TimerActivity: timeCardio()/timeStrength():\nAlertDialog: input session name\nstartActivityForResult()
+TimerActivity --> LogExerciseActivity: Chronometer: duration
+
+LogExerciseActivity -> HeartRateMonitorActivity: onActivityResult(): startActivityForResult()
+HeartRateMonitorActivity -> LogExerciseActivity: camera.open(), start time\nonKeyDown(back): stop time, store heart rate
+LogExerciseActivity -> UserDbHandler: addExerciseSession(): SQL insert
+@enduml

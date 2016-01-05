@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Base.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:windowBackground">@color/red</item>
+        <item name="android:alertDialogStyle">@style/BlackText</item>
+        <!--<item name="android:button">@style/CustomButton</item> -->
+    </style>
+
+    <style name="WhiteText" parent="AppTheme">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BlackText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Fullscreen for API 10 for more space -->
+    <style name="Fullscreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

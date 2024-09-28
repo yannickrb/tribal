@@ -59,12 +59,11 @@ public class BalanceAlgorithm
     //Calculate diet index
     public void calcDietIndex(int carbIntake, int proteinIntake, int fatIntake)
     {
-        //TODO: simplify this to carbIntake/carbTargetMin, and same for the others
         if (carbIntake < carbTargetMin) {
-            carbIndex = 1 - (Math.abs(carbTargetMin - carbIntake) / carbTargetMin);
+            carbIndex = carbIntake/carbTargetMin;
         }
         else if (carbIntake > carbTargetMax) {
-            carbIndex = 1 - (Math.abs(carbTargetMax - carbIntake) / carbTargetMax);
+            carbIndex = carbIntake/carbTargetMax;
         }
         else
         {
@@ -72,11 +71,11 @@ public class BalanceAlgorithm
         }
 
         if (proteinIntake < proteinTargetMin) {
-            proteinIndex = 1 - (Math.abs(proteinTargetMin - proteinIntake) / proteinTargetMin);
+            proteinIndex = proteinIntake/proteinTargetMin;
         }
         else if (proteinIntake > proteinTargetMax)
         {
-            proteinIndex = 1 - (Math.abs(proteinTargetMax - proteinIntake) / proteinTargetMax);
+            proteinIndex = proteinIntake/proteinTargetMax;
         }
         else
         {
@@ -84,10 +83,10 @@ public class BalanceAlgorithm
         }
 
         if (fatIntake < fatTargetMin) {
-            fatIndex = 1 - (Math.abs(fatTargetMin - fatIntake) / fatTargetMin);
+            fatIndex = fatIntake/fatTargetMin;
         }
         else if (fatIntake > fatTargetMax) {
-            fatIndex = 1 - (Math.abs(fatTargetMax - fatIntake) / fatTargetMax);
+            fatIndex = fatIntake/fatTargetMax;
         }
         else
         {
@@ -100,13 +99,13 @@ public class BalanceAlgorithm
     public void calcExerciseIndex(int cardioActual, int strengthActual)
     {
         if (cardioActual < cardioTargetMin) {
-            cardioIndex = 1 - (Math.abs(cardioTargetMin - cardioActual) / cardioTargetMin);
+            cardioIndex = cardioActual/cardioTargetMin;
         }
         else {
             cardioIndex = 1;
         }
         if (strengthActual < strengthTargetMin) {
-            strengthIndex = 1 - (Math.abs(strengthTargetMin - strengthActual) / strengthTargetMin);
+            strengthIndex = strengthActual/strengthTargetMin;
         }
         else {
             strengthIndex = 1;
@@ -118,14 +117,14 @@ public class BalanceAlgorithm
     public void calcStressIndex(int workActual, int sleepActual)
     {
         if (workActual > workTargetMax) {
-            workIndex = 1 - (Math.abs(workTargetMax - workActual) / workTargetMax);
+            workIndex = workActual/workTargetMax;
         }
         else {
             workIndex = 1;
         }
 
         if (sleepActual < sleepTargetMin) {
-            sleepIndex = 1 - (Math.abs(sleepTargetMin - sleepActual) / sleepTargetMin);
+            sleepIndex = sleepActual/sleepTargetMin;
         }
         else {
             sleepIndex = 1;

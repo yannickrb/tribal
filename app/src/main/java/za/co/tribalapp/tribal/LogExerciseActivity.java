@@ -60,6 +60,7 @@ public class LogExerciseActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(final int requestCode, int resultCode, Intent data)
     {
+        super.onActivityResult(requestCode, resultCode, data);
         //Make sure request was successful
         if (resultCode == RESULT_OK)
         {

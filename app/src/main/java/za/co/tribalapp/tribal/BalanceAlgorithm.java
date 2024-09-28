@@ -59,6 +59,7 @@ public class BalanceAlgorithm
     //Calculate diet index
     public void calcDietIndex(int carbIntake, int proteinIntake, int fatIntake)
     {
+        //TODO: simplify this to carbIntake/carbTargetMin, and same for the others
         if (carbIntake < carbTargetMin) {
             carbIndex = 1 - (Math.abs(carbTargetMin - carbIntake) / carbTargetMin);
         }

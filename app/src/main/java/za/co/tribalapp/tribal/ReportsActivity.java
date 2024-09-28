@@ -2,12 +2,12 @@ package za.co.tribalapp.tribal;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class ReportsActivity extends ActionBarActivity {
+public class ReportsActivity extends AppCompatActivity {
 
     //Initialise globals
     UserDbHandler userDb = new UserDbHandler(this);

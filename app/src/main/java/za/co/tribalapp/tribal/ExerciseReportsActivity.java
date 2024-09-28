@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,7 +33,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class ExerciseReportsActivity extends ActionBarActivity {
+public class ExerciseReportsActivity extends AppCompatActivity {
 
     //global variables
     UserDbHandler userDb = new UserDbHandler(this);

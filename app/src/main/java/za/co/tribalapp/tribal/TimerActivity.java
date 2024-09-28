@@ -3,7 +3,7 @@ package za.co.tribalapp.tribal;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,7 +12,7 @@ import android.widget.Chronometer;
 import android.widget.ToggleButton;
 
 
-public class TimerActivity extends ActionBarActivity {
+public class TimerActivity extends AppCompatActivity {
 
     //initialize globals
     ToggleButton button;
